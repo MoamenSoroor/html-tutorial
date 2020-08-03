@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html5 Course Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="page-header">
+      <h1>Html5 Course</h1>
+    </header>
+    <!-- End Header  -->
+
+    <!-- Start Navigation -->
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>World</li>
+        <li>Country</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <!-- End  Navigation -->
+
+    <!-- Start main -->
+    <main>
+      <p>Welcome to <mark> Html5 Course</mark> , Happy Learning Journey</p>
+    </main>
+    <!-- End main -->
+
+    <!-- Start Sidebar -->
+    <aside>
+      <!-- Start aside section -->
+      <section class="links">
+        <h3>Categories</h3>
+        <ul>
+          <li>My Link 1</li>
+          <li>My Link 2</li>
+          <li>My Link 3</li>
+          <li>My Link 4</li>
+        </ul>
+      </section>
+      <!-- End aside section -->
+      <!-- Start aside section -->
+      <section class="meters">
+        <h3>Meter Work</h3>
+        <label for="meter1">Meter Usage:</label>
+        <meter
+          id="meter1"
+          min="0"
+          max="100"
+          value="20"
+          low="30"
+          optimum="60"
+          high="80"
+        ></meter>
+        <br />
+        <label for="meter2">Meter Usage:</label>
+        <meter
+          id="meter2"
+          min="0"
+          max="100"
+          value="50"
+          low="30"
+          optimum="60"
+          high="80"
+        ></meter>
+        <br />
+        <label for="meter3">Meter Usage:</label>
+        <meter
+          id="meter3"
+          min="0"
+          max="100"
+          value="60"
+          low="30"
+          optimum="60"
+          high="80"
+        ></meter>
+        <br />
+        <label for="meter4">Meter Usage:</label>
+        <meter
+          id="meter4"
+          min="0"
+          max="100"
+          value="70"
+          low="30"
+          optimum="60"
+          high="80"
+        ></meter>
+        <br />
+        <label for="meter5">Meter Usage:</label>
+        <meter
+          id="meter5"
+          min="0"
+          max="100"
+          value="90"
+          low="30"
+          optimum="60"
+          high="80"
+        ></meter>
+        <br />
+      </section>
+      <!-- End aside section -->
+
+      <!-- Start aside section -->
+      <section class="audio-sec">
+        <h3>Audio Player</h3>
+        <audio
+          src="../audios/001.mp3"
+          autoplay
+          muted
+          controls
+          loop
+          preload="none"
+        >
+          Audio Not Supported in Your Browser
+        </audio>
+        <audio muted controls loop preload="none">
+          <!-- preload can be none, auto, or metadata 
+          none: doesn't load the audio in the page load
+          auto: load the audio in the page load
+          metadata: load the audio metadata in the page load-->
+
+          <!-- you can add many sources to help browser if not found first it will try with second, please also note that the only supported audio formats is mp3, ogg and, wav and can be write in the form:
+          audio/wbeg    for the format mp3
+          audio/ogg     for the format ogg
+          audio/wav     for the format wav
+        -->
+          <source src="../audios/002.mp3" type="audio/mp3" />
+          <source src="../audios/002.ogg" type="audio/ogg" />
+          <source src="../audios/002.wav" type="audio/wav" />
+          Audio Not Supported in Your Browser
+        </audio>
+      </section>
+      <!-- End aside section -->
+
+      <!-- Start aside section -->
+      <section class="audio-sec">
+        <h3>Video Player</h3>
+        <video
+          src="../videos/video001.mp4"
+          autoplay
+          muted
+          controls
+          loop
+          preload="none"
+        >
+          video Not Supported in Your Browser
+        </video>
+      </section>
+      <!-- End aside section -->
+
+      <!-- Start aside section -->
+      <section class="form-sec">
+        <h3>Form Elements</h3>
+        <form action="">
+          <label for="username">text:</label>
+          <input type="text" name="username" id="username" />
+
+          <label for="password">password:</label>
+          <input type="password" name="password" id="password" />
+
+          <label for="email">email:</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="telephone">telephone:</label>
+          <input type="tel" name="telephone" id="telephone" />
+
+          <label for="word">pattern attribute(7 chars validation):</label>
+          <input type="text" name="word" id="word" pattern="[a-zA-z]{7}" />
+
+          <label for="url">url:</label>
+          <input type="url" name="url" id="url" />
+
+          <label for="search">search:</label>
+          <input type="search" name="search" id="search" />
+          <input type="button" value="Search" />
+
+          <label for="choosefile">file:</label>
+          <input type="file" name="choosefile" id="choosefile" />
+
+          <label for="multiplefiles">Choose Multiple Files:</label>
+          <input type="file" name="multiplefiles" id="multiplefiles" multiple />
+
+          <label for="persons">List and Datalist(persons):</label>
+          <input list="persons" name="persons" />
+          <datalist id="persons">
+            <option value="Moamen">Moamen</option>
+            <option value="Rahma">Rahma</option>
+            <option value="Ahmed">Ahmed</option>
+            <option value="Mostafa">Mostafa</option>
+            <option value="Gamal">Gamal</option>
+          </datalist>
+
+          <label for="friend">select(friend):</label>
+          <select name="friend" id="friend">
+            <option value="Moamen">Moamen</option>
+            <option value="Rahma">Rahma</option>
+            <option value="Ahmed">Ahmed</option>
+            <option value="Mostafa">Mostafa</option>
+            <option value="Gamal">Gamal</option>
+          </select>
+
+          <label for="time">time:</label>
+          <input type="time" name="time" id="time" />
+
+          <label for="date">date:</label>
+          <input type="date" name="date" id="date" />
+
+          <label for="dt_local">datetime-local:</label>
+          <input
+            type="datetime-local"
+            name="dt_local"
+            id="dt_local"
+            onchange="dt_output.value = dt_local.value;"
+          />
+
+          <label for="dt_output">Datetime Value:</label>
+          <output name="dt_output" id="dt_output">##########</output>
+
+          <label for="month">month:</label>
+          <input type="month" name="month" id="month" />
+
+          <label for="week">week:</label>
+          <input type="week" name="week" id="week" />
+
+          <label for="number">number:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="10"
+            max="100"
+            step="2"
+          />
+
+          <label for="range">range:</label>
+          <input
+            type="range"
+            name="range"
+            id="range"
+            min="0"
+            max="100"
+            step="2"
+            oninput="range_output.value = range.value;"
+          />
+
+          <label for="range">Range Value:</label>
+          <output name="range_output">##</output>
+
+          <label for="">Your Gender:</label><br>
+
+          <input type="radio" name="gender" id="gender1" value="0"  checked></input>
+          <label for="gender1">Male</label><br>
+
+          <input type="radio" name="gender" id="gender2" value="1" ></input>
+          <label for="gender2">Female</label><br>
+
+
+          <label for="">Your Hobby</label><br>
+          <input type="checkbox" name="hobby" id="hobby1" value="0" ></input>
+          <label for="hobby1">Football</label><br>
+
+          <input type="checkbox" name="hobby" id="hobby2" value="1" ></input>
+          <label for="hobby2">Basketball</label><br>
+
+          <input type="submit" value="Register" />
+          <input type="reset" value="Clear" />
+        </form>
+      </section>
+      <!-- End aside section -->
+      <!-- Start aside section -->
+      <section class="">
+        <h3>My Big Paragraph</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, deleniti. Cum consectetur aspernatur dolorum ratione id impedit doloribus explicabo aliquam esse, obcaecati consequatur architecto itaque, soluta, illo recusandae sequi aliquid. Voluptates, quis. Dolorem illum facilis sapiente voluptate maxime iure, velit eaque obcaecati ut incidunt quod? Dolorum recusandae nostrum dolor ad in suscipit quas vero quam doloremque eligendi molestias corporis libero asperiores iure, numquam possimus, accusamus, consectetur hic atque saepe fuga eaque at totam? Praesentium quis similique explicabo ipsum provident debitis sunt ex at magnam maiores consequuntur libero perferendis quaerat accusamus voluptate, perspiciatis ut non! Reprehenderit, distinctio. Ad aut, inventore recusandae corporis excepturi in laborum atque temporibus autem totam. Excepturi pariatur veritatis quos sapiente reiciendis asperiores culpa dolores, perspiciatis, quasi accusamus vero? Laudantium deleniti totam asperiores tempore optio, facilis nisi voluptas nemo. Nam voluptate eos fugit odio libero assumenda mollitia soluta debitis quos, a magni inventore tenetur nemo odit praesentium recusandae consequatur iusto. Maxime facere possimus ipsam deserunt dolorum praesentium dolorem, incidunt magni unde aut rerum similique quis voluptas, animi quia eius! Nemo quod, quibusdam officia deserunt ea rerum libero earum quaerat architecto nostrum exercitationem odio laudantium! Libero provident velit consequuntur quo ipsum harum illo cupiditate explicabo nisi placeat accusamus vero quae magni nam, mollitia voluptas ullam nobis eos. Iusto, recusandae harum earum culpa magnam exercitationem aut impedit aliquid, quo ipsam perspiciatis, optio provident distinctio molestiae autem quis. Animi ea iste nulla voluptates reprehenderit quaerat molestias quisquam sapiente omnis! Voluptates perspiciatis earum laboriosam ducimus, provident, nulla rem adipisci explicabo ratione incidunt distinctio magni quo modi pariatur! Numquam quibusdam unde odio delectus magnam! Molestiae tempore quia fugiat pariatur quis optio fuga quaerat delectus, libero blanditiis dicta eius possimus unde, eum alias sunt! Consequatur, autem possimus ipsam nesciunt sint neque soluta commodi, earum expedita nemo rem non exercitationem accusamus repudiandae obcaecati! Quod corrupti doloribus minus dolores amet voluptatibus, in id laudantium eaque modi cupiditate rem commodi suscipit natus dolorem reprehenderit. Vel error saepe, ut odio quaerat eaque neque consectetur aut? Molestiae itaque atque nulla porro quia eligendi explicabo assumenda, autem corrupti tenetur harum, ab sed fugiat amet quidem consequuntur quaerat reprehenderit, aut veritatis! Numquam error nobis laborum, et in inventore tenetur magni blanditiis, laudantium quae illo, cum dignissimos. Sunt rerum explicabo aliquam natus sequi earum a harum distinctio voluptates libero. Debitis hic, cum accusamus quo explicabo porro dolorem ratione ipsa aspernatur doloremque harum enim adipisci natus assumenda deserunt recusandae. Cupiditate quas reprehenderit minima a nisi officia consequuntur illo illum iure. Recusandae eum eaque dolores repellat. Quo ad eaque vel earum adipisci cum reiciendis quibusdam. Cum, ullam totam. Expedita sit distinctio voluptatum consequuntur, voluptate in corporis quam dolores, saepe nobis nostrum magni maiores dicta ratione itaque praesentium ipsa. Eos quam quasi quo, nihil quae exercitationem corrupti provident expedita nulla itaque iure distinctio, ducimus assumenda. Neque repellendus, consectetur ea quisquam suscipit facere ipsum consequuntur iusto! Omnis perspiciatis reprehenderit deserunt repellendus dolores perferendis suscipit expedita veniam iure numquam fugit iusto blanditiis ratione nesciunt nostrum ea porro corrupti accusamus voluptatem autem, temporibus incidunt magnam dolorem labore? Magni.</p>
+      </section>
+      <!-- End aside section -->
+
+    </aside>
+    <!-- End Sidebar -->
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="post">
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Article 1</h3>
+
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            officiis inventore dolores libero quos, sit deserunt consequatur
+            rem. Obcaecati, tenetur!
+          </p>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Article 2</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            temporibus ex animi aliquid illum? Autem repudiandae nam cum ipsam
+            doloremque saepe qui voluptatibus quis eaque nihil, quae illum
+            placeat cupiditate!
+          </p>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Progrss bar Lesson</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <label for="prog1">Progress:</label>
+          <progress id="prog1"></progress>
+          <br />
+          <label for="prog2">Progress:</label>
+          <progress id="prog2" max="100" value="60"></progress>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Lesson</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <details open>
+            <summary>References:</summary>
+            <ul class="details-ul">
+              <li><a href="#"> your link 1</a></li>
+              <li><a href="#"> your link 2</a></li>
+              <li><a href="#"> your link 3</a></li>
+              <li><a href="#"> your link 4</a></li>
+            </ul>
+          </details>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>wbr Tag Lesson</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <p>
+            this is line where we need to <wbr />add more and more lines or
+            links 1 <wbr />this is line where we need to<wbr /> add more and
+            more lines or links 2 <wbr />this is line where we need to <wbr />
+            add more and more lines or links 3
+          </p>
+          <p>
+            <wbr />this is line where we need to <wbr /><wbr />add more and more
+            lines or links 1 <wbr /><wbr />this is line where we need to<wbr />
+            <wbr />add more and more lines or links 2 <wbr /><wbr />this is line
+            where we need to<wbr /> <wbr />add more and more lines or links
+            3<wbr />
+          </p>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Figure and Figcaption</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <figure>
+            <code> Console.WriteLine("Result = " + (10+20)) </code>
+            <figcaption>Peace of C# Code</figcaption>
+          </figure>
+        </section>
+      </article>
+      <!-- End Article  -->
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Figure and Figcaption with Image</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <figure>
+            <img
+              src="../images/egypt-flag.jpg"
+              alt="Free Eqypt Flag"
+              width="100%"
+            />
+            <figcaption>Picture 0-1</figcaption>
+          </figure>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Video Player</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <video
+            muted
+            controls
+            loop
+            preload="metadata"
+            poster="../images/poster.png"
+          >
+            <!-- preload can be none, auto, or metadata 
+                        none: doesn't load the video in the page load
+                        auto: load the video in the page load
+                        metadata: load the video metadata in the page load-->
+
+            <!-- you can add many sources to help browser if not found first it will try with second, please also note that the only supported video formats is mp3, ogg and, wav and can be write in the form:
+                        video/wbeg    for the format mp3
+                        video/ogg     for the format ogg
+                        video/wav     for the format wav
+                      -->
+            <source src="../videos/video001.mp4" type="video/mp4" />
+            <source src="../videos/video001.ogg" type="video/ogg" />
+            <source src="../videos/video001.wemb" type="video/wemb" />
+            video Not Supported in Your Browser
+          </video>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Youtube Video Player</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section>
+          <!-- https://www.youtube.com/embed/LVBIC3h5Vlw -->
+          <iframe
+            src="https://www.youtube.com/embed/LVBIC3h5Vlw"
+            width="100%"
+            height="500"
+          ></iframe>
+        </section>
+      </article>
+      <!-- End Article  -->
+
+      <!-- Start Article -->
+      <article>
+        <header>
+          <h3>Some Form Elements Attributes</h3>
+          <p>created by Moamen Soroor at 26/6/2020 12:00 AM</p>
+        </header>
+        <section class="form-sec">
+          <h4>Form attributes</h4>
+          <p>
+            Method: Get, Post <br>
+            Action: the backend server file that process form elements <br>
+            enctype: encoding of form default is application/x-www-form-urlencoded <br>
+            novalidate: send data without validating any input in the form: like email or phone or specific pattern input. <br>
+            autocomplete: can be set to on/off stop autocoplete feature in that form to prevent previous data from appear in new user inputs <br>
+            target: like a tag links submit can be passed to another page or stay in the same page.
+            
+
+          </p>
+          <h4>Disabled vs readonly</h4>
+          
+          <form action="backend.php" id="myform1" name="myform1" method="GET" enctype="application/x-www-form-urlencoded">
+            <input type="text" name="text1" id="text1" placeholder="this is disabled text 
+            field" disabled>
+            <input type="text" name="text2" id="text2" placeholder="this is readonly text field" readonly>
+            <input type="submit" value="Submit">
+            <p>NOTE: that disabled form element doesn't sent to server. and doesn't appear in focus. In the other hand, readonly elements value is sent to server and is focusable</p>
+          </form>
+          <br>
+          <h4>Method Get and Post</h4>
+          <form action="" id="myform2" name="myform2" method="GET">
+            <input type="text" name="text3" id="text3" placeholder="text">
+            <input type="text" name="text4" id="text4" placeholder="text">
+            <input type="submit" value="Submit">
+            <p>method &equals; Get is the default and allow browser url to show form input vlaues, in the other hand, method &equals; Post hide form elements from browser url</p>
+          </form>
+          <form action="" id="myform3" name="myform3" method="Post" target="_blank">
+            <input type="text" name="text5" id="text5" placeholder="text">
+            <input type="text" name="text6" id="text6" placeholder="text">
+            <input type="submit" value="Submit">
+            <p>method &equals; Get is the default and allow browser url to show form input vlaues, in the other hand, method &equals; Post hide form elements from browser url</p>
+          </form>
+
+          <h4>autocomplete on/off and autofocus on/off</h4>
+          <form action="" id="myform4" name="myform4" method="GET">
+            <input type="text" name="text7" id="text7" placeholder="text" autocomplete="off">
+            <input type="text" name="text8" id="text8" placeholder="text">
+            <input type="submit" value="Submit">
+            <p>autocomplete default is on, set it off to disable that property</p>
+          </form>
+          <form action="" id="myform5" name="myform5" method="get">
+            <input type="text" name="text9" id="text9" placeholder="text" autofocus="on">
+            <input type="text" name="text10" id="text10" placeholder="text">
+            <input type="submit" value="Submit">
+            <p>autofocus default is on, set it off to disable that property</p>
+          </form>
+
+          <h4>required attribute</h4>
+          <form action="" id="myform6" name="myform6" method="GET">
+            <label for="">you should assign value to the next input as it marked as assigned</label>
+            <input type="text" name="text11" id="text11" placeholder="text" required>
+            <input type="text" name="text12" id="text12" placeholder="text">
+            <input type="submit" value="Submit">
+            <p>form will not be submited until you assign a value to required fields</p>
+          </form>
+
+          <h4>multiple attribute</h4>
+          <form action="" id="myform7" name="myform7" method="GET">
+            <input type="file" name="file13" id="file13" >
+            <input type="file" name="file14" id="file14"  multiple>
+            <input type="email" name="email14" id="email14" placeholder="non multiple email">
+            <input type="email" name="email15" id="email15" placeholder="multiple email" multiple>
+            <input type="tel" name="tel14" id="tel14" placeholder="non multiple telephone">
+            <input type="tel" name="tel15" id="tel15" placeholder="multiple telephone" multiple>
+            <input type="submit" value="Submit">
+            <p> By using multiple form elements attribute, you can add many items to the the element like: many tel , many email many files, by write your input and make a comma and space then enter the next value, note that many form elements doesn't affect with multiple attribute like date, time, button, text, and etc </p>
+          </form>
+
+
+          <h4>novalidate attribute</h4>
+          <form action="" id="myform8" name="myform8" method="GET" novalidate>
+            <input type="email" name="text15" id="text15" placeholder="novalidate" >
+            <input type="email" name="text16" id="text16" placeholder="novalidate">
+            <input type="submit" value="Submit">
+            <p> By usin novalidate in form or in Submit or in image We can stop validation in form elements where there are a validation like: email, url, tel, or input with pattern.</p>
+          </form>
+
+          <h4>Tie Element out of the Form</h4>
+          <input type="text" name="outtext" id="outtext" placeholder="i am out of the form" form="myform10">
+          <form action="" id="myform10" name="myform10" method="GET" novalidate>
+            <input type="text" name="outtext17" id="outtext17" placeholder="i am in the form">
+            <input type="submit" value="Submit">
+            <p> By usin form attribute of outer form element we can send that element to backend when we assign that form.</p>
+          </form>
+
+          <h4>image input and submit input Form attributes</h4>
+          <form action="backend.php" id="myform9" name="myform9" method="GET" novalidate>
+            <input type="submit" value="Submit" formaction="backend2.php" formmethod="GET" formnovalidate formtarget="_blank" formenctype="application/x-www-form-urlencoded" >
+            <input type="image" src="../images/saudiArabiaFlag.png" width="300px" formaction="backend3.php" formmethod="GET" formnovalidate formtarget="_blank" formenctype="application/x-www-form-urlencoded">
+            <p>NOTE: we can assign form attribute to a submit or image input to allow sending of form to another backend with other submit options <br>
+            form attributes that can be used at submit or image inputs are: <br>
+          <ul class="normal-list">
+            <li>formaction</li>
+            <li>formmethod</li>
+            <li>formenctype</li>
+            <li>formtarget</li>
+          </ul></p>
+          </form>
+
+
+        </section>
+      </article>
+      <!-- End Article  -->
+
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Start Footer -->
+    <footer>
+      Copyright 2020 &copy; All Right Reserved
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My forms</title>
+    <style>
+      .my-textarea {
+        font-size: large;
+        resize: none;
+      }
+      input {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="register" action="" method="">
+      <fieldset>
+        <legend>Your Personal Info</legend>
+        <label for="">Username:</label>
+        <input
+          type="text"
+          name="username"
+          id=""
+          value=""
+          placeholder="Enter Username"
+        />
+        <br />
+        <label for="">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id=""
+          value=""
+          placeholder="Enter Password"
+        />
+        <br />
+        <label for="">Enter Your Message</label>
+        <br />
+        <textarea
+          class="my-textarea"
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Enter Your Message"
+          maxlength="100"
+          wrap="soft"
+        ></textarea>
+        <!-- textarea wrap attrib. can be soft, hard and off-->
+
+        <br />
+        <label for="">Upload your CV: </label>
+        <input type="file" name="cvfile" id="cvfile" />
+
+        <br />
+        <input type="checkbox" name="remember" id="remember" />
+        <label for="remember">Remember Me</label>
+
+        <br />
+        <input
+          type="image"
+          name="location"
+          src="http://placehold.it/300X100/ffff"
+          alt="Submit"
+        />
+        <br />
+        <input type="hidden" name="" value="hidden input" />
+      </fieldset>
+
+      <fieldset>
+        <legend>You Favorite info:</legend>
+        <label for=""> Choose your Favorite Browser:</label> <br />
+        <input type="radio" name="browser" id="" value="Chrome" checked />
+        Chrome <br />
+        <input type="radio" name="browser" id="" value="FireFox" /> FireFox
+        <br />
+        <input type="radio" name="browser" id="" value="Obera" /> Obera <br />
+
+        <label for=""> Choose your Favorite Mobile:</label> <br />
+        <input type="radio" name="mobile" id="" value="Samsung" checked />
+        Samsung <br />
+        <input type="radio" name="mobile" id="" value="Hawawi" /> Hawawi <br />
+        <input type="radio" name="mobile" id="" value="Nokia" /> Nokia <br />
+      </fieldset>
+      <fieldset>
+        <legend>Send Options</legend>
+        <select name="time" id="">
+          <optgroup label="Group1">
+            <option value="1">item1</option>
+            <option value="2">item2</option>
+            <option value="3">item3</option>
+          </optgroup>
+          <optgroup label="Group2" disabled>
+            <option value="4">item4</option>
+            <option value="5">item5</option>
+            <option value="6">item6</option>
+          </optgroup>
+          <optgroup label="Group3">
+            <option value="7">item7</option>
+            <option value="8" disabled>item8</option>
+            <option value="9">item9</option>
+          </optgroup>
+        </select>
+        <input type="button" value="Say Hello" onclick="sayHello()" />
+        <input type="submit" value="Sign Up" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+    <script>
+      function sayHello() {
+        alert("Say Hello!!");
+      }
+    </script>
+  </body>
+</html>

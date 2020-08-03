@@ -1,0 +1,194 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.page-header {
+  text-align: center;
+  background-color: #e74c3c;
+  color: #f7f9f9;
+  padding: 10px;
+}
+
+nav {
+  background-color: darkgray;
+  padding: 10px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:after {
+  content: " |";
+}
+
+nav ul li:last-child:after {
+  content: "";
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 10px;
+}
+
+/* main */
+main {
+  background-color: lightsteelblue;
+  padding: 10px;
+  text-align: center;
+}
+
+main p mark {
+  color: black;
+  background-color: yellowgreen;
+}
+/* main */
+
+/* aside */
+aside {
+  width: 30%;
+  float: left;
+}
+
+aside section {
+  display: block;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #aaa;
+  color: black;
+  align-items: center;
+}
+
+aside section h3 {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #e74c3c;
+  color: black;
+}
+
+aside section ul {
+  list-style: none;
+}
+
+aside section ul li {
+  line-height: 1.9;
+}
+
+/* aside */
+
+/* post div that has articles  */
+.post {
+  width: 70%;
+  float: right;
+}
+
+.post article {
+  margin: 10px;
+  margin-top: 20px;
+  border: 2px solid #222;
+}
+
+.post article header {
+  background-color: #e74c3c;
+  padding: 10px;
+}
+
+.post article section {
+  background-color: #ccd1d1;
+  padding: 10px;
+}
+
+.post article section p {
+  padding: 10px;
+}
+
+.post article section figure {
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.post article section code {
+  border: 2px solid gray;
+  background-color: white;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+}
+
+.post article section h4 {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.post article section .normal-list {
+  display: block;
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* end post div that has articles */
+.clearfix {
+  clear: both;
+}
+
+/* Some general Styles */
+.details-ul {
+  list-style: none;
+}
+
+.form-sec input,
+output,
+select {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  font-size: large;
+}
+
+.form-sec label {
+  display: inline;
+  font-size: large;
+  margin: 5px;
+}
+
+.form-sec input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+  size: 20px;
+}
+
+.form-sec input[type="submet"],
+input[type="reset"] {
+  display: inline;
+}
+
+audio,
+video {
+  display: block;
+  margin: 5px;
+  width: 100%;
+}
+/* End Some general Styles */

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <h1>Select Training</h1>
+    <h2>Select Basics</h2>
+    <select name="" id="">
+      <option value="1">My Option 1</option>
+      <option value="2">My Option 2</option>
+      <option value="3">My Option 3</option>
+      <option value="4">My Option 4</option>
+    </select>
+    <h2>Select that is disabled</h2>
+    <select name="" id="" disabled>
+      <option value="1">My Option 1</option>
+      <option value="2">My Option 2</option>
+      <option value="3">My Option 3</option>
+      <option value="4">My Option 4</option>
+    </select>
+
+    <h2>Select that has selected Option</h2>
+    <select name="" id="">
+      <option value="1">My Option 1</option>
+      <option value="2" selected>My Option 2</option>
+      <option value="3">My Option 3</option>
+      <option value="4">My Option 4</option>
+    </select>
+
+    <h2>Select with a size more than 1</h2>
+    <select name="" id="" size="3">
+      <option value="1">My Option 1</option>
+      <option value="2">My Option 2</option>
+      <option value="3">My Option 3</option>
+      <option value="4">My Option 4</option>
+    </select>
+
+    <h2>Select with a multiple select</h2>
+    <select name="" id="" size="3" multiple>
+      <option value="1">My Option 1</option>
+      <option value="2">My Option 2</option>
+      <option value="3">My Option 3</option>
+      <option value="4">My Option 4</option>
+    </select>
+
+    <h2>
+      Select with a multiple select without size showing the whole options
+    </h2>
+    <select name="" id="" multiple>
+      <option value="1">My Option 1</option>
+      <option value="2">My Option 2</option>
+      <option value="3">My Option 3</option>
+      <option value="4">My Option 4</option>
+    </select>
+
+    <h2>
+      Select with disabled options
+    </h2>
+    <select name="" id="">
+      <option value="1" disabled>My Option 1</option>
+      <option value="2">My Option 2</option>
+      <option value="3" disabled>My Option 3</option>
+      <option value="4">My Option 4</option>
+    </select>
+
+    <h2>select with optgroup</h2>
+    <!--select>optgroup*4[label="group$"][name="group$"]>option*4{Item Text$}-->
+    <select name="select1" id="">
+      <optgroup label="group1" name="group1">
+        <option value="">Item Text1</option>
+        <option value="">Item Text2</option>
+        <option value="">Item Text3</option>
+        <option value="">Item Text4</option>
+      </optgroup>
+      <optgroup label="group2" name="group2">
+        <option value="">Item Text1</option>
+        <option value="">Item Text2</option>
+        <option value="">Item Text3</option>
+        <option value="">Item Text4</option>
+      </optgroup>
+      <optgroup label="group3" name="group3">
+        <option value="">Item Text1</option>
+        <option value="">Item Text2</option>
+        <option value="">Item Text3</option>
+        <option value="">Item Text4</option>
+      </optgroup>
+      <optgroup label="group4" name="group4">
+        <option value="">Item Text1</option>
+        <option value="">Item Text2</option>
+        <option value="">Item Text3</option>
+        <option value="">Item Text4</option>
+      </optgroup>
+    </select>
+
+    <h2>We can disable Whole optgroup</h2>
+    <select name="" id="">
+      <optgroup label="My Group 1">
+        <option value="">Text Option 1</option>
+        <option value="">Text Option 2</option>
+        <option value="">Text Option 3</option>
+      </optgroup>
+      <optgroup label="my group 2" disabled>
+        <option value="">Text Option 1</option>
+        <option value="">Text Option 2</option>
+        <option value="">Text Option 3</option>
+      </optgroup>
+      <optgroup label="My Group 3">
+        <option value="">Text Option 1</option>
+        <option value="">Text Option 2</option>
+        <option value="">Text Option 3</option>
+      </optgroup>
+    </select>
+
+    <h2>optgroup with multiple selection</h2>
+    <select name="" id="" multiple>
+      <optgroup label="My Group 1">
+        <option value="">opt text 1</option>
+        <option value="">opt text 2</option>
+        <option value="">opt text 3</option>
+        <option value="">opt text 4</option>
+      </optgroup>
+      <optgroup label="My Group 2">
+        <option value="">opt text 1</option>
+        <option value="">opt text 2</option>
+        <option value="">opt text 3</option>
+        <option value="">opt text 4</option>
+      </optgroup>
+      <optgroup label="My Group 3">
+        <option value="">opt text 1</option>
+        <option value="">opt text 2</option>
+        <option value="">opt text 3</option>
+        <option value="">opt text 4</option>
+      </optgroup>
+      <optgroup label="My Group 4">
+        <option value="">opt text 1</option>
+        <option value="">opt text 2</option>
+        <option value="">opt text 3</option>
+        <option value="">opt text 4</option>
+      </optgroup>
+    </select>
+  </body>
+</html>

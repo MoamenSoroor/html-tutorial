@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="a nice form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nice Form</title>
+    <style>
+      body {
+        background-color: #fafafa;
+        font-family: Arial, Tahoma;
+        font-size: medium;
+      }
+      fieldset {
+        margin: 10px;
+        padding: 15px;
+        background-color: #fff;
+        border: 2px solid #ccc;
+      }
+
+      legend {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      label {
+        margin: 5px;
+      }
+
+      .title-label {
+        display: block;
+        margin-top: 15px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        display: block;
+        margin: 10px;
+        padding: 10px;
+        width: 400px;
+        font-size: large;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        display: inline;
+      }
+
+      input[type="submit"] {
+        display: block;
+        margin: 7px;
+        font-size: large;
+        padding: 5px;
+      }
+
+      textarea {
+        display: block;
+        resize: none;
+        width: 400px;
+        height: 250px;
+        font-size: large;
+      }
+      select {
+        display: block;
+        margin: 10px;
+        width: 400px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Person Form</h1>
+    <form action="" name="register">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="">Username: </label>
+        <input type="text" name="username" id="" />
+        <label for="">Password: </label>
+        <input type="password" name="password" id="" />
+        <label for="">E-mail: </label>
+        <input type="text" name="email" id="" />
+        <label for="">Gender:</label>
+        <select name="gender" id="">
+          <option value="0">Male</option>
+          <option value="1">Female</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Your Favorites:</legend>
+        <label for="" class="title-label">Your Favorite Text Editor:</label>
+        <input type="radio" name="editor" value="1" id="editor1" checked />
+        <label for="editor1">VSCode</label>
+        <input type="radio" name="editor" value="2" id="editor2" />
+        <label for="editor2">Visual Studio</label>
+        <input type="radio" name="editor" value="3" id="editor3" />
+        <label for="editor3">Eclipse</label>
+
+        <label for="" class="title-label">Your Favorite OS:</label>
+        <input type="checkbox" name="os1" value="1" id="os1" />
+        <label for="os1">Windows 10</label>
+        <input type="checkbox" name="os2" value="2" id="os2" />
+        <label for="os2">Linux</label>
+        <input type="checkbox" name="os3" value="3" id="os3" />
+        <label for="os3">Mac OS</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Message:</legend>
+        <textarea
+          name="message"
+          id=""
+          placeholder="Enter your Message here"
+        ></textarea>
+        <input type="submit" value="Send Your Data" />
+      </fieldset>
+    </form>
+    <script></script>
+  </body>
+</html>

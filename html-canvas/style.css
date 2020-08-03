@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Tahoma, Arieal, sans-serif;
+}
+
+section {
+  background-color: #ccc;
+  margin: 20px;
+}
+
+header {
+  background-color: #5ce433;
+  padding: 15px;
+}
+
+header.page-header {
+  background-color: #2196f3;
+  padding: 20px;
+  text-align: center;
+}
+
+canvas {
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  display: block;
+  border: 2px solid #222;
+  background-color: white;
+}

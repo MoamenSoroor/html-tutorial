@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="this is Table Test Pages." />
+    <title>Table Page</title>
+
+    <link rel="stylesheet" href="my-style.css" />
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <h1>Tables in Html</h1>
+
+    <h2>Table: tr, and td</h2>
+    <table border="1">
+      <tr>
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+      </tr>
+      <tr>
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+      </tr>
+      <tr>
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+        <td>table data cell</td>
+      </tr>
+    </table>
+
+    <h2>Table: th and caption</h2>
+    <table border="1" width="500">
+      <caption>
+        This is my Table with th and Caption
+      </caption>
+      <tr>
+        <th>Table Head cell</th>
+        <th>Table Head cell</th>
+        <th>Table Head cell</th>
+      </tr>
+      <tr>
+        <td>cell of table</td>
+        <td>cell of table</td>
+        <td>cell of table</td>
+      </tr>
+      <tr>
+        <td>cell of table</td>
+        <td>cell of table</td>
+        <td>cell of table</td>
+      </tr>
+      <tr>
+        <td>cell of table</td>
+        <td>cell of table</td>
+        <td>cell of table</td>
+      </tr>
+    </table>
+
+    <h2>Table: thead, tfoot, and tbody</h2>
+    <table style="text-align: center; width: 400; border: 1px solid red;">
+      <caption>
+        Table
+      </caption>
+      <thead
+        style="
+          text-align: center;
+          background-color: green;
+          font-weight: bold;
+          color: red;
+        "
+      >
+        <td>table head</td>
+        <td>table head</td>
+        <td>table head</td>
+      </thead>
+      <tfoot style="text-align: center; font-weight: bold; color: green;">
+        <td>table foot</td>
+        <td>table foot</td>
+        <td>table foot</td>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>cell of table</td>
+          <td>cell of table</td>
+          <td>cell of table</td>
+        </tr>
+        <tr>
+          <td>cell of table</td>
+          <td>cell of table</td>
+          <td>cell of table</td>
+        </tr>
+        <tr>
+          <td>cell of table</td>
+          <td>cell of table</td>
+          <td>cell of table</td>
+        </tr>
+        <tr>
+          <td>cell of table</td>
+          <td>cell of table</td>
+          <td>cell of table</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Table: rowspan</h2>
+    <table border="1" width="500">
+      <caption>
+        Rowspan
+      </caption>
+      <tr>
+        <td>Name</td>
+        <td>Email</td>
+      </tr>
+      <tr>
+        <td>Mohammed</td>
+        <td>mm@gmail.com</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Moamen soroor</td>
+        <td>ms@gmail.com</td>
+      </tr>
+      <tr>
+        <td>ms2@gmail.com</td>
+      </tr>
+      <tr>
+        <td>ms3@gmail.com</td>
+      </tr>
+    </table>
+
+    <h2>Table: colspan</h2>
+    <table border="1" width="500">
+      <caption>
+        Colspan
+      </caption>
+      <tr>
+        <td>Name</td>
+        <td colspan="2">Phones</td>
+      </tr>
+      <tr>
+        <td>Mohammed</td>
+        <td>010020123</td>
+        <td>010020123</td>
+      </tr>
+      <tr>
+        <td>Ahmed</td>
+        <td>010020123</td>
+        <td>010020123</td>
+      </tr>
+      <tr>
+        <td>Gamal</td>
+        <td>010020123</td>
+        <td>010020123</td>
+      </tr>
+      <tr>
+        <td>Moamen</td>
+        <td>010020123</td>
+        <td>010020123</td>
+      </tr>
+    </table>
+
+    <h2>Column group</h2>
+    <table width="400">
+      <caption>
+        Table: columngroup
+      </caption>
+      <colgroup>
+        <col span="2" style="background-color: greenyellow;" />
+        <col span="2" style="background-color: grey;" />
+      </colgroup>
+      <tr>
+        <td>col1</td>
+        <td>col2</td>
+        <td>col3</td>
+        <td>col4</td>
+      </tr>
+      <tr>
+        <td>col1</td>
+        <td>col2</td>
+        <td>col3</td>
+        <td>col4</td>
+      </tr>
+      <tr>
+        <td>col1</td>
+        <td>col2</td>
+        <td>col3</td>
+        <td>col4</td>
+      </tr>
+      <tr>
+        <td>col1</td>
+        <td>col2</td>
+        <td>col3</td>
+        <td>col4</td>
+      </tr>
+    </table>
+  </body>
+</html>
